@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Professional Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .bg-primary {
+      background-color: #4F46E5;
+    }
+    .text-primary {
+      color: #4F46E5;
+    }
+    .hover\:bg-primary\/90:hover {
+      background-color: rgba(79, 70, 229, 0.9);
+    }
+    .text-accent {
+      color: #F59E0B;
+    }
+    .hover\:text-secondary:hover {
+      color: #3730A3;
+    }
+    .border-primary {
+      border-color: #4F46E5;
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex flex-col md:flex-row items-center justify-between">
+      <div class="flex items-center mb-4 md:mb-0">
+        <div class="text-primary font-bold text-2xl">
+          <span class="text-primary">Company</span>
+          <span class="text-accent">Logo</span>
+        </div>
+      </div>
+      
+      <nav>
+        <ul class="flex space-x-1 md:space-x-8">
+          <li>
+            <a href="index.html" class="px-3 py-2 font-medium rounded-md transition hover:bg-gray-100">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="about.html" class="px-3 py-2 font-medium rounded-md transition bg-primary text-white">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="contacts.html" class="px-3 py-2 font-medium rounded-md transition hover:bg-gray-100">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8 flex-grow">
+    <h1 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">About Our Company</h1>
+    
+    <!-- Two Column Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+      <!-- Left Column -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4 text-gray-800">Our Story</h2>
+        <p class="mb-4 text-gray-700 leading-relaxed">
+          Founded in 2010, our company began with a simple mission: to provide exceptional services 
+          and solutions to businesses of all sizes. Over the years, we've grown from a small team 
+          of passionate individuals to a diverse group of industry experts.
+        </p>
+        <p class="mb-4 text-gray-700 leading-relaxed">
+          Our journey has been marked by continuous learning, adaptation, and a commitment to excellence. 
+          We believe in building lasting relationships with our clients by understanding 
+          their unique challenges and delivering tailored solutions.
+        </p>
+        <p class="mb-6 text-gray-700 leading-relaxed">
+          Today, we're proud to have served hundreds of clients across various industries, 
+          helping them achieve their business objectives and navigate the complexities 
+          of the modern marketplace.
+        </p>
+        
+        <!-- Company Values -->
+        <div class="space-y-4">
+          <h3 class="text-xl font-semibold mb-4 text-gray-800">Our Values</h3>
+          
+          <div class="border-l-4 border-primary pl-4 py-2">
+            <h4 class="text-lg font-semibold text-gray-800">Integrity</h4>
+            <p class="text-gray-600">We operate with transparency and honesty in all our interactions.</p>
+          </div>
+          
+          <div class="border-l-4 border-primary pl-4 py-2">
+            <h4 class="text-lg font-semibold text-gray-800">Innovation</h4>
+            <p class="text-gray-600">We embrace new ideas and technologies to deliver cutting-edge solutions.</p>
+          </div>
+          
+          <div class="border-l-4 border-primary pl-4 py-2">
+            <h4 class="text-lg font-semibold text-gray-800">Excellence</h4>
+            <p class="text-gray-600">We strive for the highest quality in everything we do.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Column -->
+      <div>
+        <div class="rounded-lg overflow-hidden shadow-lg mb-6">
+          <img 
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+            alt="Our team" 
+            class="w-full h-auto object-cover"
+          />
+        </div>
+        
+        <!-- Company Stats -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+          <h3 class="text-xl font-semibold mb-4 text-gray-800">Company Statistics</h3>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="text-center">
+              <div class="text-2xl md:text-3xl font-bold text-primary mb-1">10+</div>
+              <div class="text-sm text-gray-600">Years of Experience</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl md:text-3xl font-bold text-primary mb-1">200+</div>
+              <div class="text-sm text-gray-600">Projects Completed</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl md:text-3xl font-bold text-primary mb-1">50+</div>
+              <div class="text-sm text-gray-600">Team Members</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl md:text-3xl font-bold text-primary mb-1">95%</div>
+              <div class="text-sm text-gray-600">Client Satisfaction</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Certifications -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+          <h3 class="text-xl font-semibold mb-4 text-gray-800">Our Certifications</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-primary mr-2"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="text-gray-700">ISO 9001:2015</span>
+            </li>
+            <li class="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-primary mr-2"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="text-gray-700">Microsoft Partner</span>
+            </li>
+            <li class="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-primary mr-2"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="text-gray-700">Google Certified</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-semibold mb-6 text-gray-800">Meet Our Leadership Team</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Team Member 1 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+          <img
+            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+            alt="Sarah Johnson"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800">Sarah Johnson</h3>
+            <p class="text-primary font-medium mb-2">Chief Executive Officer</p>
+            <p class="text-gray-600">15+ years of industry experience. Leads our strategic vision and operations.</p>
+          </div>
+        </div>
+        
+        <!-- Team Member 2 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+          <img
+            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+            alt="David Wilson"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800">David Wilson</h3>
+            <p class="text-primary font-medium mb-2">Chief Technology Officer</p>
+            <p class="text-gray-600">Expert in emerging technologies and software architecture.</p>
+          </div>
+        </div>
+        
+        <!-- Team Member 3 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+          <img
+            src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+            alt="Michelle Lee"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800">Michelle Lee</h3>
+            <p class="text-primary font-medium mb-2">Chief Marketing Officer</p>
+            <p class="text-gray-600">Award-winning marketer with experience across global brands.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-lg font-semibold mb-4">About Us</h3>
+          <p class="text-gray-300 text-sm">
+            We provide professional services and solutions to businesses worldwide, 
+            helping them achieve their goals and overcome challenges.
+          </p>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-gray-300 hover:text-white transition">Home</a></li>
+            <li><a href="about.html" class="text-gray-300 hover:text-white transition">About Us</a></li>
+            <li><a href="#services" class="text-gray-300 hover:text-white transition">Services</a></li>
+            <li><a href="#projects" class="text-gray-300 hover:text-white transition">Projects</a></li>
+            <li><a href="contacts.html" class="text-gray-300 hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Services</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#consulting" class="text-gray-300 hover:text-white transition">Business Consulting</a></li>
+            <li><a href="#development" class="text-gray-300 hover:text-white transition">Web Development</a></li>
+            <li><a href="#mobile" class="text-gray-300 hover:text-white transition">Mobile Applications</a></li>
+            <li><a href="#marketing" class="text-gray-300 hover:text-white transition">Digital Marketing</a></li>
+            <li><a href="#support" class="text-gray-300 hover:text-white transition">IT Support</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+          <p class="text-gray-300 text-sm mb-4">
+            Subscribe to our newsletter for the latest updates.
+          </p>
+          <form class="flex">
+            <input 
+              type="email" 
+              placeholder="Your email" 
+              class="px-3 py-2 text-gray-800 rounded-l-md w-full text-sm focus:outline-none"
+            />
+            <button 
+              type="submit" 
+              class="bg-primary hover:bg-primary/90 px-4 py-2 rounded-r-md text-white text-sm transition"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-700 mt-8 pt-6 flex flex-col md:flex-row items-center justify-between">
+        <p class="text-gray-400 text-sm mb-4 md:mb-0">
+          &copy; 2025 Company Name. All rights reserved.
+        </p>
+        <div class="flex space-x-4">
+          <a href="#privacy" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+          <a href="#terms" class="text-gray-400 hover:text-white transition">Terms of Service</a>
+          <a href="#cookies" class="text-gray-400 hover:text-white transition">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
